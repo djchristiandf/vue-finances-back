@@ -3,7 +3,7 @@ const { prisma } = require('./generated/prisma-client')
 
 const resolvers = {
   Query: {
-    user(parent, aargs, context, info){
+    user(parent, args, context, info){
       return prisma.user({ id: args.id})
     }
   }
